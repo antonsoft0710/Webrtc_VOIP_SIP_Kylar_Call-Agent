@@ -1,0 +1,45 @@
+{
+  "name": "kylar-call-handling",
+  "version": "0.0.1",
+  "main": "app.js",
+  "engines": {
+    "node": ">= 8.10.0"
+  },
+  "keywords": [
+    "sip",
+    "drachtio"
+  ],
+  "author": "",
+  "license": "",
+  "scripts": {
+    "start": "node app",
+    "jslint": "eslint app.js lib"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.5",
+    "body-parser": "^1.19.0",
+    "config": "^3.1.0",
+    "drachtio-fn-fsmrf-sugar": "0.0.8",
+    "drachtio-fsmrf": "^1.4.4",
+    "drachtio-srf": "^4.4.8",
+    "express": "^4.17.1",
+    "minimist": "^1.2.0",
+    "moment": "^2.24.0",
+    "pino": "^5.12.6",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "request-debug": "^0.2.0",
+    "rtpengine-client": "0.0.8",
+    "short-uuid": "^3.1.1"
+  },
+  "devDependencies": {
+    "blue-tape": "^1.0.0",
+    "clear-module": "^3.2.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "nyc": "^14.1.1",
+    "tap": "^14.1.11",
+    "tap-dot": "^2.0.0",
+    "tap-spec": "^5.0.0"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "drachtio": {
+    "host": "127.0.0.1",
+    "port": 9060,
+    "secret": "cymru"
+  },
+  "rtpengine": {
+    "host": "127.0.0.1",
+    "port": 9080
+  },
+  "redis" : {
+    "address": "127.0.0.1",
+    "port": 9379
+  },
+  "logging": {
+    "level": "info"
+  },
+  "domains": [
+    {
+      "name": "drachtio.org",
+      "users": [
+        {
+          "username": "1234",
+          "password": "foo"
+        },
+        {
+          "username": "5678",
+          "password": "bar",
+          "dids": ["+15083084809"]
+        }
+      ]   
+    }
+  ],
+  "sip-trunks": {
+    "outbound": {
+      "host": "172.38.0.12",
+      "port": 5060,
+      "default-ani": "+15083084809"  
+    },
+    "inbound": ["172.38.0.25"]
+  },
+  "transcoding": {
+    "rtpCharacteristics" : {
+      "transport protocol": "RTP/AVP",
+      "DTLS": "off",
+      "SDES": "off",
+      "ICE": "remove",
+      "rtcp-mux": ["demux"]
+    },
+    "srtpCharacteristics": {
+      "transport-protocol": "UDP/TLS/RTP/SAVPF",
+      "ICE": "force",
+      "SDES": "off",
+      "flags": ["generate mid", "SDES-no"],
+      "rtcp-mux": ["require"]
+    } 
+  }
+}

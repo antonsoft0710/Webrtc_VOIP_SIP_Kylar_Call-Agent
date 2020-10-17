@@ -1,0 +1,45 @@
+{
+  "drachtio": {
+    "host": "127.0.0.1",
+    "port": 9022,
+    "secret": "cymru"
+  },
+  "rtpengine": {
+    "host": "127.0.0.1",
+    "port": 22222
+  },
+  "freeswitch": [{
+    "address": "127.0.0.1",
+    "port": 8021,
+    "secret": "ClueCon"
+  }],
+  "redis" : {
+    "address": "127.0.0.1",
+    "port": 6379
+  },
+  "logging": {
+    "level": "info"
+  },
+  "auth": {
+    "uri": "http://56a6f691.ngrok.io/api/botpress/generateRequestDigest"
+  },
+  "conference": {
+    "did": "2663"
+  },
+  "transcoding": {
+    "rtpCharacteristics" : {
+      "transport protocol": "RTP/AVP",
+      "DTLS": "off",
+      "SDES": "off",
+      "ICE": "remove",
+      "rtcp-mux": ["demux"]
+    },
+    "srtpCharacteristics": {
+      "transport-protocol": "UDP/TLS/RTP/SAVPF",
+      "ICE": "force",
+      "SDES": "off",
+      "flags": ["generate mid", "SDES-no"],
+      "rtcp-mux": ["require"]
+    } 
+  }
+}

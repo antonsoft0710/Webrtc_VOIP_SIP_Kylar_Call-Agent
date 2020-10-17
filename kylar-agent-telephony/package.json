@@ -1,0 +1,34 @@
+{
+  "name": "kylar-agent-telephony",
+  "version": "0.0.1",
+  "main": "app.js",
+  "engines": {
+    "node": ">= 8.10.0"
+  },
+  "keywords": [
+    "sip",
+    "drachtio"
+  ],
+  "author": "Dave Horton",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app",
+    "jslint": "eslint app.js lib"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.4",
+    "clear-require": "^3.0.0",
+    "config": "^3.1.0",
+    "debug": "^4.1.1",
+    "drachtio-fn-fsmrf-sugar": "0.0.8",
+    "drachtio-fsmrf": "^1.4.4",
+    "drachtio-mw-registration-parser": "^0.1.0",
+    "drachtio-srf": "^4.4.8",
+    "nonce": "^1.0.4",
+    "pino": "^5.12.3",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "request-debug": "^0.2.0",
+    "rtpengine-client": "0.0.8"
+  }
+}
